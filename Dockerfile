@@ -11,3 +11,5 @@ RUN npm install
 COPY ./ ./
 
 CMD [ "node", "./bin/www" ]
+
+#Volume 사용법 : docker run -p local port : container port -v /usr/src/app/node_modules -v $(pwd):/usr/src/app image name
